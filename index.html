@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <nav>
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="search-input" placeholder="Buscar tarea...">
+      </div>
+      <ul>
+        <li><a href="#" class="evento-calendario">Generar Evento Calendario</a></li>
+        <li><a href="#" class="mostrar-grafico-link">Mostrar Gráfico</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="task-list-section">
+        <!-- Imagen y titulo de portada-->
+        <div class="img-titulo">
+          <img src="assets/img/todolist.jpg" alt="" class="img-lista" />
+          <h1 class="titulo">Lista de Tareas</h1>
+        </div>
+        <!--Contenedor para todo el formulario-->
+        <div class="form-container">
+          <input
+            type="text"
+            id="new-task-input"
+            placeholder="Añade la Tarea..."
+          />
+          <!-- btn para insertar tarea-->
+          <button class="add-task-btn">Añadir Tarea</button>
+        </div>
+          <div class="message-error">
+
+          </div>
+        
+        <!--Lista de tareas-->
+        <ul class="tasks-list-ul"></ul>
+        <!--Seccion que agrupa el grafico-->
+        <section class="grafico-container"></section>
+        <!-- input para introducir la tarea-->
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
