@@ -134,7 +134,7 @@ function createTaskElement(task) {
 
 function addTask() {
   const newTaskTitle = app.newTaskInput.value;
-  let encontrado = app.tasks.map((task) => task.title).includes(newTaskTitle);
+  let encontrado = app.tasks.map((task) => task.title.toLowerCase()).includes(newTaskTitle.toLowerCase());
   if (!encontrado) {
     const newTask = createNewTask(newTaskTitle);
     app.tasks.push(newTask);
